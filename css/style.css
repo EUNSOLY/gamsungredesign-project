@@ -13,10 +13,11 @@
 a{
     color: inherit;
     text-decoration: none;
+    display: block;
 }
 /* 라이브러리 */
 body{
-    width: 10O%;
+    width: 100%;
     font-size: 16px;
     background-color: #ffffff;
 }
@@ -31,29 +32,59 @@ body{
 header > .top-wrap > .top-bar-box{
     width: 1200px;
     height: 80px;
-    background-color: #dddd;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
 }
+
+
 header > .top-wrap > .top-bar-box > .logo{
     width: 80px;
     height: 80px;
     margin-left: 10px;
     float: left;
+    border:1px solid black;
     
 }
 
 header > .top-wrap > .top-bar-box > .logo img{
-    width: 100%;
+    width: 80px;
+    height: 80px;
 
 }
 
 header > .top-wrap > .top-bar-box > .nav-box{
-    background-color: black;
-    width: 782px;
+    width: 800px;
+    /* float: left; */
+    border:1px solid black;
     height: 80px;
-    margin: 0 auto;
 }
 header > .top-wrap > .top-bar-box > .nav-box li{
     float:left;
     line-height: 80px;
     text-align: center;
+    width: calc(100%/4);
+}
+header > .top-wrap > .top-bar-box > .nav-box li > a{
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header > .top-wrap > .top-bar-box > .icon-box{
+    width: 100px;
+    /* float: right; */
+    border:1px solid black;
+}   
+header > .top-wrap > .top-bar-box > .icon-box li{
+    width: calc(100%/2);
+    float: left;
+
+}
+header > .top-wrap > .top-bar-box > .icon-box li > a{
+    line-height: 80px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
 }
