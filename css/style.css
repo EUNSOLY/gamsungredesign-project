@@ -29,52 +29,55 @@ body{
 
 /* 스타일 */
 
+/* 탑바(top-bar) 제작 */
 header > .top-wrap > .top-bar-box{
     width: 1200px;
     height: 80px;
-    background-color: #ddd;
     display: flex;
     justify-content: space-between;
+    background-color:#ddd;
 }
 
-
+header > .top-wrap > .top-bar-box li{
+    color:#ff3225;
+    font-size: 18px;
+    font-weight: bold;
+}
 header > .top-wrap > .top-bar-box > .logo{
     width: 80px;
     height: 80px;
     margin-left: 10px;
-    float: left;
-    border:1px solid black;
-    
+    display: flex;
+}
+
+header > .top-wrap > .top-bar-box > .logo > a{
+    width: 100%;
+    display: flex;
 }
 
 header > .top-wrap > .top-bar-box > .logo img{
-    width: 80px;
-    height: 80px;
-
+    width: 60px;
+    padding: 20px;
 }
 
 header > .top-wrap > .top-bar-box > .nav-box{
     width: 800px;
-    /* float: left; */
-    border:1px solid black;
     height: 80px;
 }
+
 header > .top-wrap > .top-bar-box > .nav-box li{
     float:left;
     line-height: 80px;
     text-align: center;
     width: calc(100%/4);
 }
+
 header > .top-wrap > .top-bar-box > .nav-box li > a{
     line-height: 80px;
-    font-weight: bold;
-    font-size: 18px;
 }
 
 header > .top-wrap > .top-bar-box > .icon-box{
     width: 100px;
-    /* float: right; */
-    border:1px solid black;
 }   
 header > .top-wrap > .top-bar-box > .icon-box li{
     width: calc(100%/2);
@@ -87,4 +90,19 @@ header > .top-wrap > .top-bar-box > .icon-box li > a{
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    position: relative;
+}
+header > .top-wrap > .top-bar-box > .icon-box li > a > .icon{
+    color: #ffffff;
+    position: relative;
+}
+header > .top-wrap > .top-bar-box > .icon-box li > a > .icon::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    top: -8px;
+    left: -6px;
 }
