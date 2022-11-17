@@ -21,11 +21,11 @@ body{
     font-size: 16px;
     background-color: #ffffff;
 }
+
 .con{
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 /* 스타일 */
 
@@ -34,7 +34,6 @@ header{
     z-index: 888;
 }
 header > .top-wrap > .top-bar-box{
-    max-width: 1200px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -107,6 +106,22 @@ header > .top-wrap > .top-bar-box > .icon-box li > a > .icon::before{
     height: 45px;
     border-radius: 50%;
 }
+/* floating 시작 */
+
+.floating-wrap{
+    position: relative;
+    z-index: 9999;
+}
+.floating-wrap > .floating-box{
+    position: fixed;
+    height: 100vh;
+    right: 200px;
+}
+.floating-wrap > .floating-box > a{
+    
+    background-color: #ddd;
+}
+
 
 /* main-vi 시작 */
 
