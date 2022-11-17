@@ -104,10 +104,12 @@ header > .top-wrap > .top-bar-box > .icon-box li > a > .icon{
 .floating-wrap{
     position: relative;
     z-index: 9999;
+    border: 3px solid blue;
 }
 .floating-wrap > .floating-box{
     position: fixed;
     right: 200px;
+    top: 480px;
 }
 .floating-wrap > .floating-box > li {
     margin-bottom:30px;
