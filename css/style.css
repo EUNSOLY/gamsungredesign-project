@@ -6,7 +6,7 @@
     padding: 0;
     list-style: none;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #333333;
+    color: #ff3225;
 
 }
 
@@ -40,7 +40,6 @@ header > .top-wrap > .top-bar-box{
 }
 
 header > .top-wrap > .top-bar-box li{
-    color:#ff3225;
     font-size: 18px;
     font-weight: bold;
 }
@@ -95,17 +94,11 @@ header > .top-wrap > .top-bar-box > .icon-box li > a{
 header > .top-wrap > .top-bar-box > .icon-box li > a > .icon{
     font-size: 23px;
     color: #ffffff;
-    z-index: 900;
+    padding:8px;
+    background-color:#ff3225;
+    border-radius:50%;
 }
 
-header > .top-wrap > .top-bar-box > .icon-box li > a > .icon::before{
-    content:;
-    display: block;
-    background-color: red;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
 /* floating 시작 */
 
 .floating-wrap{
@@ -114,12 +107,10 @@ header > .top-wrap > .top-bar-box > .icon-box li > a > .icon::before{
 }
 .floating-wrap > .floating-box{
     position: fixed;
-    height: 100vh;
     right: 200px;
 }
-.floating-wrap > .floating-box > a{
-    
-    background-color: #ddd;
+.floating-wrap > .floating-box > li {
+    margin-bottom:30px;
 }
 
 
@@ -135,20 +126,4 @@ header > .top-wrap > .top-bar-box > .icon-box li > a > .icon::before{
 
 .main-vi-wrap > img{
     width: 100%;
-}
-
-.main-vi-wrap > .main-vi{
-    position: relative;
-    height: 200px;
-    top: -450px;
-}
-
-.main-vi-wrap > .main-vi > .main-vi-text{
-    position: absolute;
-    top: 20px;
-    right:100px;
-}
-.main-vi-wrap > .main-vi > .main-vi-text > .tilte-text{
-    font-size: 20px;
-    color: red;
 }
